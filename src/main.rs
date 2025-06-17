@@ -70,9 +70,11 @@ fn main() -> io::Result<()> {
         }
     }
 
+    let out_ext = if args.json { "json" } else { "out" };
     let out_name = format!(
-        "{}.out",
-        dir_path.file_name().and_then(|s| s.to_str()).unwrap_or("output")
+        "{}.{}",
+        dir_path.file_name().and_then(|s| s.to_str()).unwrap_or("output"),
+        out_ext
     );
 
     if args.json {
