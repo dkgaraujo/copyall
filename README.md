@@ -25,3 +25,9 @@ Copy the content of all files with the ".py" extension and which start in "BKP" 
 ```
 $ copyall --ext py --regex "^BKP" --json
 ```
+
+Copy the content of all files with the ".py" extension and which start in "BKP" in the Downloads directory into "output.json":
+
+```
+$ copyall --ext py --regex "^BKP" --json --dir ~/Downloads
+```
