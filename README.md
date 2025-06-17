@@ -1,6 +1,4 @@
-# copyall
-
-This terminal utility copies all or some files in a directory into a single file.
+copyall is a terminal utility copies all or some files in a directory into a single file.
 
 # Usage
 
